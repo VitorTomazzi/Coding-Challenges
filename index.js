@@ -89,3 +89,26 @@ function getContainer(product) {
 	}
 	return container;
 }
+
+//Create a function that returns the ASCII value of the passed in character.
+function ctoa(c) {
+	return c.charCodeAt()
+}
+
+//Create a function that takes three number arguments — one number as an input and two additional numbers 
+//representing the endpoints of a closed range — and return the number limited to this range.
+// If the number falls within the range, the number should be returned.
+// If the number is less than the lower limit of the range, the lower limit should be returned.
+// If the number is greater than the upper limit of the range, the upper limit should be returned.
+
+
+
+//Create a function that takes a word and returns true if the word has two consecutive identical letters.
+function doubleLetters(word) {
+	for(let i=0; i<word.length; i++){
+		if(word.charAt(i)===word.charAt(i+1)) {
+			return true
+		}
+	}
+	return false
+}
