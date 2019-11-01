@@ -55,9 +55,37 @@ function factorial(n) {
 	return n * factorial(n - 1);
 }
 
-//Create a function that takes a Present Value of Cash pv, an Investment Rate ir and the Number of Years years 
+//Create a function that takes a Present Value of Cash pv, an Investment Rate ir and the Number of Years years
 //to be Invested and returns the Net Present Value.
 
 function netPresentValue(pv, ir, years) {
-	return pv, ir, years <= 0 ? false : `$${Math.round(pv*(1-Math.pow((1+ir),-years))/ir)}`
+	return pv, ir, years <= 0 ? false : `$${Math.round(pv * (1 - Math.pow(1 + ir, -years)) / ir)}`;
+}
+
+//Debug the container question Edabit
+function getContainer(product) {
+	let container;
+	switch (product) {
+		case 'Bread':
+			container = 'bag';
+			break;
+		case 'Beer':
+			container = 'bottle';
+			break;
+		case 'Milk':
+			container = 'bottle';
+			break;
+		case 'Cereals':
+			container = 'box';
+			break;
+		case 'Eggs':
+			container = 'carton';
+			break;
+		case 'Candy':
+			container = 'plastic';
+			break;
+		default:
+			container = null;
+	}
+	return container;
 }
