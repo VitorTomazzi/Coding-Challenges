@@ -54,3 +54,10 @@ function factorial(n) {
 	}
 	return n * factorial(n - 1);
 }
+
+//Create a function that takes a Present Value of Cash pv, an Investment Rate ir and the Number of Years years 
+//to be Invested and returns the Net Present Value.
+
+function netPresentValue(pv, ir, years) {
+	return pv, ir, years <= 0 ? false : `$${Math.round(pv*(1-Math.pow((1+ir),-years))/ir)}`
+}
