@@ -45,3 +45,12 @@ function isPrime(num) {
 		}
 	}
 }
+
+//write factorial equation recursively
+function factorial(n) {
+	//4*3*2*1
+	if (n === 0) {
+		return 1;
+	}
+	return n * factorial(n - 1);
+}
