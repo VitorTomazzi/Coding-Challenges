@@ -32,3 +32,16 @@ const hasKey = (obj, key) => (obj[key] ? true : false);
 function isInRange(num, range) {
 	return num >= range.min && num <= range.max ? true : false;
 }
+
+//find if any number is prime
+function isPrime(num) {
+	for (let i = 2; i < num; i++) {
+		if (num % i === 0) {
+			//if 'not prime' shows up, number is not prime and loop will break at that multiple
+			console.log(`${i}: Not Prime`);
+			break;
+		} else {
+			console.log(`${i}: Prime`);
+		}
+	}
+}
