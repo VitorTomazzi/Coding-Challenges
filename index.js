@@ -198,3 +198,10 @@ function isBetween(first, last, word) {
 function both(n1, n2) {
 	return (n1 * n2 > 0) || (n1,n2 === 0) ? true : false
 }
+
+//Create a function that returns the smaller number.
+//Math.min does an internal conversion of string numbers, i.e '9', 
+//but if anything inside the string is NaN, it wont work
+function smallerNum(n1, n2) {
+	return Math.min(n1, n2).toString();
+}
