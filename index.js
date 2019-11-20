@@ -190,3 +190,11 @@ function isBetween(first, last, word) {
 			: angle1 + angle2 > 90 ? 'acute'
 			: 'right';
 	}
+
+//Write a function that checks if two numbers are either:
+// Smaller than 0
+// Greater than 0
+// Exactly 0
+function both(n1, n2) {
+	return (n1 * n2 > 0) || (n1,n2 === 0) ? true : false
+}
