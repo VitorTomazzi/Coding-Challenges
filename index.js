@@ -179,3 +179,14 @@ function isBetween(first, last, word) {
 	let sorted = arr.sort((a,b)=>a.localeCompare(b))
 	return sorted[0] == first && sorted[sorted.length-1] == last ? true : false
 }
+
+// You are given 2 out of 3 of the angles in a triangle, in degrees.
+// Write a function that classifies the missing angle as either "acute", "right", or "obtuse" based on its degrees.
+	// An acute angle is less than 90 degrees.
+	// A right angle is exactly 90 degrees.
+	// An obtuse angle is greater than 90 degrees (but less than 180 degrees).
+	function missingAngle(angle1, angle2) {
+		return angle1 + angle2 < 90 ? 'obtuse'
+			: angle1 + angle2 > 90 ? 'acute'
+			: 'right';
+	}
