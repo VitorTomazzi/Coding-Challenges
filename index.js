@@ -171,3 +171,11 @@ function Go(num) {
 	let hyphen = "-"
 	return hyphen.repeat(num)
 }
+
+//Write a function that takes three string arguments (first, last, word) 
+//and returns true if (when alphabetically sorted) word is found between first and last.
+function isBetween(first, last, word) {
+	let arr = [first, last, word]
+	let sorted = arr.sort((a,b)=>a.localeCompare(b))
+	return sorted[0] == first && sorted[sorted.length-1] == last ? true : false
+}
