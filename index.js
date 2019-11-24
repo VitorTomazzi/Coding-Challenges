@@ -159,3 +159,9 @@ function firstArg() {
 function lastArg() {
 	return arguments[arguments.length - 1]
 }
+
+//Write a function that takes an integer and returns a string with the given number of "a"s in Edabit.
+function howManyTimes(num) {
+	let letter = 'a'
+	return 'Ed' + letter.repeat(num) + 'bit'
+}
