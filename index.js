@@ -147,3 +147,15 @@ function additiveInverse(arr) {
 function countWords(str) {
 	return str.split('').filter(char => char.includes(' ')).length + 1
 }
+
+//Write two functions:
+	// firstArg() should return the first parameter passed in.
+	// lastArg() should return the last parameter passed in.
+// Return undefined if the function takes no parameters.
+function firstArg() {
+	return arguments[0]
+}
+
+function lastArg() {
+	return arguments[arguments.length - 1]
+}
