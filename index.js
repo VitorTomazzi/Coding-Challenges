@@ -138,3 +138,12 @@ function additiveInverse(arr) {
 	}
 	return newArr
 }
+
+function additiveInverse(arr) {
+	return arr.map(x => -x);
+}
+
+//Create a function that takes a string and returns the word count. The string will be a sentence.
+function countWords(str) {
+	return str.split('').filter(char => char.includes(' ')).length + 1
+}
