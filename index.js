@@ -118,3 +118,14 @@ function largestSwap(num) {
 	let revNum = Number(String(num).split('').reverse().join(''))
 	return num >= revNum ? true : false
 }
+
+//Create a function that counts the number of syllables a word has. Each syllable is separated with a dash -.
+function numberSyllables(word) {
+	let sylables = 1
+	for(let i = 0; i< word.length; i++){
+		if(word[i] === '-'){
+			sylables++
+		}
+	}
+	return sylables
+}
