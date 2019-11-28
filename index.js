@@ -129,3 +129,12 @@ function numberSyllables(word) {
 	}
 	return sylables
 }
+
+//A number added with its additive inverse equals zero. Create a function that returns an array of additive inverses.
+function additiveInverse(arr) {
+	let newArr = []
+	for(let i = 0; i<arr.length; i++){
+		newArr.push(-arr[i])
+	}
+	return newArr
+}
