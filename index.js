@@ -112,3 +112,9 @@ function doubleLetters(word) {
 	}
 	return false
 }
+
+//Write a function that takes a two-digit number and determines if it's the largest of two possible digit swaps.
+function largestSwap(num) {
+	let revNum = Number(String(num).split('').reverse().join(''))
+	return num >= revNum ? true : false
+}
